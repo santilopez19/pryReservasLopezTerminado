@@ -1,6 +1,6 @@
 ﻿namespace pryReservasLopezTerminado
 {
-    partial class frmOnas
+    partial class frmTobas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOnas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTobas));
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnReservar = new System.Windows.Forms.Button();
@@ -43,26 +43,26 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(302, 11);
+            this.label3.Location = new System.Drawing.Point(302, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 16);
-            this.label3.TabIndex = 20;
+            this.label3.TabIndex = 29;
             this.label3.Text = "Funcion";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(305, 40);
+            this.comboBox1.Location = new System.Drawing.Point(305, 43);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 19;
+            this.comboBox1.TabIndex = 28;
             // 
             // btnReservar
             // 
-            this.btnReservar.Location = new System.Drawing.Point(305, 251);
+            this.btnReservar.Location = new System.Drawing.Point(305, 254);
             this.btnReservar.Name = "btnReservar";
             this.btnReservar.Size = new System.Drawing.Size(75, 23);
-            this.btnReservar.TabIndex = 18;
+            this.btnReservar.TabIndex = 27;
             this.btnReservar.Text = "Reservar";
             this.btnReservar.UseVisualStyleBackColor = true;
             this.btnReservar.Click += new System.EventHandler(this.btnReservar_Click_1);
@@ -70,53 +70,53 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(302, 193);
+            this.label2.Location = new System.Drawing.Point(302, 196);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 16);
-            this.label2.TabIndex = 17;
+            this.label2.TabIndex = 26;
             this.label2.Text = "Lugar";
             // 
             // cmbLugar
             // 
             this.cmbLugar.FormattingEnabled = true;
-            this.cmbLugar.Location = new System.Drawing.Point(305, 212);
+            this.cmbLugar.Location = new System.Drawing.Point(305, 215);
             this.cmbLugar.Name = "cmbLugar";
             this.cmbLugar.Size = new System.Drawing.Size(53, 24);
-            this.cmbLugar.TabIndex = 16;
+            this.cmbLugar.TabIndex = 25;
             // 
             // txtDni
             // 
-            this.txtDni.Location = new System.Drawing.Point(305, 161);
+            this.txtDni.Location = new System.Drawing.Point(305, 164);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(121, 22);
-            this.txtDni.TabIndex = 15;
+            this.txtDni.TabIndex = 24;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(305, 103);
+            this.txtNombre.Location = new System.Drawing.Point(305, 106);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(121, 22);
-            this.txtNombre.TabIndex = 14;
+            this.txtNombre.TabIndex = 23;
             // 
             // Nombre
             // 
             this.Nombre.AutoSize = true;
-            this.Nombre.Location = new System.Drawing.Point(302, 84);
+            this.Nombre.Location = new System.Drawing.Point(302, 87);
             this.Nombre.Name = "Nombre";
             this.Nombre.Size = new System.Drawing.Size(56, 16);
-            this.Nombre.TabIndex = 13;
+            this.Nombre.TabIndex = 22;
             this.Nombre.Text = "Nombre";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(302, 142);
+            this.label1.Location = new System.Drawing.Point(302, 145);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(27, 16);
-            this.label1.TabIndex = 12;
+            this.label1.TabIndex = 21;
             this.label1.Text = "Dni";
             // 
-            // frmOnas
+            // frmTobas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -131,9 +131,9 @@
             this.Controls.Add(this.Nombre);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmOnas";
+            this.Name = "frmTobas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Onas";
+            this.Text = "Tobas";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -16,11 +16,11 @@ namespace pryReservasLopezTerminado
 {
     public partial class frmQuaken : Form
     {
+        private List<clsFunciones> funcionesTeatro;
         private const int Filas = 10;
         private const int Columnas = 4;
         private const int AnchoAsiento = 30;
         private const int AltoAsiento = 30;
-
         private Dictionary<string, (string Nombre, string Dni)> reservas;
         private PictureBox pictureBoxSeleccionado; // Declarar la variable pictureBoxSeleccionado
 
@@ -28,11 +28,29 @@ namespace pryReservasLopezTerminado
         {
             InitializeComponent();
             reservas = new Dictionary<string, (string Nombre, string Dni)>();
+            funcionesTeatro = new List<clsFunciones>();
             InicializarAsientos();
             InicializarComboBoxLugaresDisponibles();
+            ActualizarComboBoxFunciones(); // Llamar este método para inicializar el ComboBox
         }
         int margenHorizontalEscenario = 15;
         int margenVerticalEscenario = 25;
+        public void AgregarFuncion(clsFunciones funcion)
+        {
+            funcionesTeatro.Add(funcion);
+            MessageBox.Show($"Función añadida al teatro {funcion.Teatro}.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ActualizarComboBoxFunciones();
+        }
+
+        // Método para actualizar el ComboBox con las funciones disponibles
+        private void ActualizarComboBoxFunciones()
+        {
+            cmbFunciones.Items.Clear();
+            foreach (var funcion in funcionesTeatro)
+            {
+                cmbFunciones.Items.Add(funcion);
+            }
+        }
         private void InicializarAsientos()
         {
             int margenHorizontal = 20; // Margen horizontal

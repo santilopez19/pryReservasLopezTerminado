@@ -31,14 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTeatros));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.quenakenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.onasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tobasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.onasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reservasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tobasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reservasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrarFuncionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +51,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quenakenToolStripMenuItem,
             this.onasToolStripMenuItem,
-            this.tobasToolStripMenuItem});
+            this.tobasToolStripMenuItem,
+            this.administrarFuncionesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(890, 28);
@@ -66,27 +69,6 @@
             this.quenakenToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.quenakenToolStripMenuItem.Text = "Quenaken";
             // 
-            // onasToolStripMenuItem
-            // 
-            this.onasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reservasToolStripMenuItem1,
-            this.funcionesToolStripMenuItem1});
-            this.onasToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.onasToolStripMenuItem.Name = "onasToolStripMenuItem";
-            this.onasToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
-            this.onasToolStripMenuItem.Text = "Onas";
-            // 
-            // tobasToolStripMenuItem
-            // 
-            this.tobasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reservasToolStripMenuItem2,
-            this.funcionesToolStripMenuItem2});
-            this.tobasToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.tobasToolStripMenuItem.Name = "tobasToolStripMenuItem";
-            this.tobasToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
-            this.tobasToolStripMenuItem.Text = "Tobas";
-            this.tobasToolStripMenuItem.Click += new System.EventHandler(this.tobasToolStripMenuItem_Click);
-            // 
             // reservasToolStripMenuItem
             // 
             this.reservasToolStripMenuItem.Name = "reservasToolStripMenuItem";
@@ -99,6 +81,17 @@
             this.funcionesToolStripMenuItem.Name = "funcionesToolStripMenuItem";
             this.funcionesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.funcionesToolStripMenuItem.Text = "Funciones";
+            this.funcionesToolStripMenuItem.Click += new System.EventHandler(this.funcionesToolStripMenuItem_Click);
+            // 
+            // onasToolStripMenuItem
+            // 
+            this.onasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reservasToolStripMenuItem1,
+            this.funcionesToolStripMenuItem1});
+            this.onasToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.onasToolStripMenuItem.Name = "onasToolStripMenuItem";
+            this.onasToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
+            this.onasToolStripMenuItem.Text = "Onas";
             // 
             // reservasToolStripMenuItem1
             // 
@@ -113,17 +106,45 @@
             this.funcionesToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.funcionesToolStripMenuItem1.Text = "Funciones";
             // 
+            // tobasToolStripMenuItem
+            // 
+            this.tobasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reservasToolStripMenuItem2,
+            this.funcionesToolStripMenuItem2});
+            this.tobasToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.tobasToolStripMenuItem.Name = "tobasToolStripMenuItem";
+            this.tobasToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
+            this.tobasToolStripMenuItem.Text = "Tobas";
+            this.tobasToolStripMenuItem.Click += new System.EventHandler(this.tobasToolStripMenuItem_Click);
+            // 
             // reservasToolStripMenuItem2
             // 
             this.reservasToolStripMenuItem2.Name = "reservasToolStripMenuItem2";
             this.reservasToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
             this.reservasToolStripMenuItem2.Text = "Reservas";
+            this.reservasToolStripMenuItem2.Click += new System.EventHandler(this.reservasToolStripMenuItem2_Click);
             // 
             // funcionesToolStripMenuItem2
             // 
             this.funcionesToolStripMenuItem2.Name = "funcionesToolStripMenuItem2";
             this.funcionesToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
             this.funcionesToolStripMenuItem2.Text = "Funciones";
+            // 
+            // administrarFuncionesToolStripMenuItem
+            // 
+            this.administrarFuncionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.crearToolStripMenuItem});
+            this.administrarFuncionesToolStripMenuItem.Name = "administrarFuncionesToolStripMenuItem";
+            this.administrarFuncionesToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
+            this.administrarFuncionesToolStripMenuItem.Text = "AdministrarFunciones";
+            this.administrarFuncionesToolStripMenuItem.Click += new System.EventHandler(this.administrarFuncionesToolStripMenuItem_Click);
+            // 
+            // crearToolStripMenuItem
+            // 
+            this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
+            this.crearToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.crearToolStripMenuItem.Text = "Crear";
+            this.crearToolStripMenuItem.Click += new System.EventHandler(this.crearToolStripMenuItem_Click);
             // 
             // frmTeatros
             // 
@@ -159,5 +180,7 @@
         private System.Windows.Forms.ToolStripMenuItem tobasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reservasToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem funcionesToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem administrarFuncionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem crearToolStripMenuItem;
     }
 }

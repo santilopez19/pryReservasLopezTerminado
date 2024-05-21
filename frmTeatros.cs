@@ -32,5 +32,27 @@ namespace pryReservasLopezTerminado
         private void tobasToolStripMenuItem_Click(object sender, EventArgs e)
         {
         }
+
+        private void reservasToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmTobas frmTobas = new frmTobas();
+            frmTobas.ShowDialog();
+        }
+
+        private void administrarFuncionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void crearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void funcionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            frmAdministrarFunciones frmAdministrarFunciones = new frmAdministrarFunciones();
+            frmAdministrarFunciones.ShowDialog();
+        }
     }
 }

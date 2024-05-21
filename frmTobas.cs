@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace pryReservasLopezTerminado
 {
-    public partial class frmOnas : Form
+    public partial class frmTobas : Form
     {
         private const int Filas = 10;
         private const int Columnas = 4;
@@ -19,7 +19,7 @@ namespace pryReservasLopezTerminado
 
         private Dictionary<string, (string Nombre, string Dni)> reservas;
         private PictureBox pictureBoxSeleccionado; // Declarar la variable pictureBoxSeleccionado
-        public frmOnas()
+        public frmTobas()
         {
             InitializeComponent();
             reservas = new Dictionary<string, (string Nombre, string Dni)>();
