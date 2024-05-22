@@ -41,7 +41,11 @@ namespace pryReservasLopezTerminado
 
         private void administrarFuncionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            // Suponiendo que quakenForm es una instancia de frmQuaken
+            frmQuaken quakenForm = new frmQuaken();
+
+            frmAdministrarFunciones frmAdministrarFunciones = new frmAdministrarFunciones(quakenForm);
+            frmAdministrarFunciones.ShowDialog();
         }
 
         private void crearToolStripMenuItem_Click(object sender, EventArgs e)
@@ -51,8 +55,6 @@ namespace pryReservasLopezTerminado
         private void funcionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            frmAdministrarFunciones frmAdministrarFunciones = new frmAdministrarFunciones();
-            frmAdministrarFunciones.ShowDialog();
         }
     }
 }

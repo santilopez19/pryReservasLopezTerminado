@@ -12,12 +12,12 @@ namespace pryReservasLopezTerminado
 {
     public partial class frmAdministrarFunciones : Form
     {
-        private List<clsFunciones> funciones;
-        public frmAdministrarFunciones()
+
+        private frmQuaken frmQuaken;
+        public frmAdministrarFunciones(frmQuaken quakenForm)
         {
             InitializeComponent();
-            funciones = new List<clsFunciones>();
-
+            frmQuaken = quakenForm;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,41 +31,15 @@ namespace pryReservasLopezTerminado
                 return;
             }
 
-            clsFunciones nuevaFuncion = new clsFunciones(
-                txtNombreFuncion.Text,
-                dtFuncion.Value,
-                txtHoraFuncion.Text,
-                cmbTeatroFuncion.SelectedItem.ToString(),
-                costo
-            );
+            string nombre = txtNombreFuncion.Text;
+            DateTime fecha = dtFuncion.Value;
+            string hora = txtHoraFuncion.Text;
+            string teatro = cmbTeatroFuncion.SelectedItem.ToString();
 
-            funciones.Add(nuevaFuncion);
+            clsFunciones nuevaFuncion = new clsFunciones(nombre, fecha, hora, teatro, costo);
+            frmQuaken.AgregarFuncion(nuevaFuncion);
 
-            // Encontrar el formulario del teatro correspondiente y agregar la función
-            Form teatroForm = null;
-            if (nuevaFuncion.Teatro == "Quenaken")
-            {
-                teatroForm = Application.OpenForms.OfType<frmQuaken>().FirstOrDefault();
-            }
-            else if (nuevaFuncion.Teatro == "Onas")
-            {
-                teatroForm = Application.OpenForms.OfType<frmOnas>().FirstOrDefault();
-            }
-            else if (nuevaFuncion.Teatro == "Tobas")
-            {
-                teatroForm = Application.OpenForms.OfType<frmTobas>().FirstOrDefault();
-            }
-
-            if (teatroForm != null)
-            {
-                var method = teatroForm.GetType().GetMethod("AgregarFuncion");
-                if (method != null)
-                {
-                    method.Invoke(teatroForm, new object[] { nuevaFuncion });
-                }
-            }
-
-            MessageBox.Show("Función creada con éxito.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Función agregada correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             LimpiarCampos();
         }
 

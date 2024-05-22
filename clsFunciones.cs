@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pryReservasLopezTerminado
 {
-    internal class clsFunciones
+    public class clsFunciones
     {
         public string Nombre { get; set; }
         public DateTime Fecha { get; set; }

@@ -22,7 +22,9 @@ namespace pryReservasLopezTerminado
         private const int AnchoAsiento = 30;
         private const int AltoAsiento = 30;
         private Dictionary<string, (string Nombre, string Dni)> reservas;
-        private PictureBox pictureBoxSeleccionado; // Declarar la variable pictureBoxSeleccionado
+        private PictureBox pictureBoxSeleccionado;
+
+
 
         public frmQuaken()
         {
@@ -31,14 +33,14 @@ namespace pryReservasLopezTerminado
             funcionesTeatro = new List<clsFunciones>();
             InicializarAsientos();
             InicializarComboBoxLugaresDisponibles();
-            ActualizarComboBoxFunciones(); // Llamar este método para inicializar el ComboBox
+            ActualizarComboBoxFunciones();
+            frmAdministrarFunciones adminForm = new frmAdministrarFunciones(this);
         }
         int margenHorizontalEscenario = 15;
         int margenVerticalEscenario = 25;
         public void AgregarFuncion(clsFunciones funcion)
         {
             funcionesTeatro.Add(funcion);
-            MessageBox.Show($"Función añadida al teatro {funcion.Teatro}.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ActualizarComboBoxFunciones();
         }
 
@@ -49,6 +51,10 @@ namespace pryReservasLopezTerminado
             foreach (var funcion in funcionesTeatro)
             {
                 cmbFunciones.Items.Add(funcion);
+            }
+            if (cmbFunciones.Items.Count > 0)
+            {
+                cmbFunciones.SelectedIndex = 0; // Selecciona el primer elemento por defecto
             }
         }
         private void InicializarAsientos()

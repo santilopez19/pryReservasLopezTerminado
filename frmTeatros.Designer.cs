@@ -40,7 +40,6 @@
             this.reservasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.administrarFuncionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.crearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,14 +95,14 @@
             // reservasToolStripMenuItem1
             // 
             this.reservasToolStripMenuItem1.Name = "reservasToolStripMenuItem1";
-            this.reservasToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.reservasToolStripMenuItem1.Size = new System.Drawing.Size(157, 26);
             this.reservasToolStripMenuItem1.Text = "Reservas";
             this.reservasToolStripMenuItem1.Click += new System.EventHandler(this.reservasToolStripMenuItem1_Click);
             // 
             // funcionesToolStripMenuItem1
             // 
             this.funcionesToolStripMenuItem1.Name = "funcionesToolStripMenuItem1";
-            this.funcionesToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.funcionesToolStripMenuItem1.Size = new System.Drawing.Size(157, 26);
             this.funcionesToolStripMenuItem1.Text = "Funciones";
             // 
             // tobasToolStripMenuItem
@@ -120,31 +119,22 @@
             // reservasToolStripMenuItem2
             // 
             this.reservasToolStripMenuItem2.Name = "reservasToolStripMenuItem2";
-            this.reservasToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.reservasToolStripMenuItem2.Size = new System.Drawing.Size(157, 26);
             this.reservasToolStripMenuItem2.Text = "Reservas";
             this.reservasToolStripMenuItem2.Click += new System.EventHandler(this.reservasToolStripMenuItem2_Click);
             // 
             // funcionesToolStripMenuItem2
             // 
             this.funcionesToolStripMenuItem2.Name = "funcionesToolStripMenuItem2";
-            this.funcionesToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.funcionesToolStripMenuItem2.Size = new System.Drawing.Size(157, 26);
             this.funcionesToolStripMenuItem2.Text = "Funciones";
             // 
             // administrarFuncionesToolStripMenuItem
             // 
-            this.administrarFuncionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.crearToolStripMenuItem});
             this.administrarFuncionesToolStripMenuItem.Name = "administrarFuncionesToolStripMenuItem";
             this.administrarFuncionesToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
             this.administrarFuncionesToolStripMenuItem.Text = "AdministrarFunciones";
             this.administrarFuncionesToolStripMenuItem.Click += new System.EventHandler(this.administrarFuncionesToolStripMenuItem_Click);
-            // 
-            // crearToolStripMenuItem
-            // 
-            this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
-            this.crearToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.crearToolStripMenuItem.Text = "Crear";
-            this.crearToolStripMenuItem.Click += new System.EventHandler(this.crearToolStripMenuItem_Click);
             // 
             // frmTeatros
             // 
@@ -181,6 +171,5 @@
         private System.Windows.Forms.ToolStripMenuItem reservasToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem funcionesToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem administrarFuncionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem crearToolStripMenuItem;
     }
 }

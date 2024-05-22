@@ -16,7 +16,11 @@ namespace pryReservasLopezTerminado
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmTeatros());
+
+            // Crear una instancia de frmTeatros si es necesario
+            frmTeatros teatrosForm = new frmTeatros(); // Asegúrate de importar el espacio de nombres adecuado
+
+            Application.Run(teatrosForm);
         }
     }
 }
